@@ -7,7 +7,15 @@
     <title>Bem vindo</title>
 </head>
 <body>
-    <h1>{{$apelido_nome = 'Cásio' ? 'Sim' : 'Não'}}</h1>
+
+    @if ($nome = 'Cássio')
+        <h1>Sim</h1>
+    @else 
+        <h2>Não</h2>
+    @endif
+
+
+
 </body>
 
 </html>
