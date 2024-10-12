@@ -8,11 +8,32 @@
 </head>
 <body>
 
-    @if ($nome = 'Cássio')
+    {{-- @if ($nome = 'Cássio')
         <h1>Sim</h1>
     @else 
         <h2>Não</h2>
     @endif
+
+    @for ($i = 0; $i <= 10; $i++)
+        <p> Valor de i é: {{$i}} </p>
+    @endfor --}}
+
+    @foreach ($ingredientes as $ing)
+
+        <p> 
+            {{$ing}}
+        
+            @component('components.botao')
+            Editar
+            @endcomponent
+
+            @component('components.botao')
+            Deletar
+            @endcomponent
+
+        </p>
+        
+    @endforeach
 
 
 

@@ -8,9 +8,13 @@ class SiteController extends Controller
 {
     public function index() {
         $data = [
-            'apelido_nome' =>  'Cássio', 
-            'html' => '<b style = "color: red ">Negrito</b>'
+            'ingredientes' => [
+                'Farinha',
+                'ovos',
+                'Farinha 2',
+                'ovos 2'
+            ]
         ];
-        return view('bemvindo', $data);
+        return view('bemvindo',$data);
     }
 }
