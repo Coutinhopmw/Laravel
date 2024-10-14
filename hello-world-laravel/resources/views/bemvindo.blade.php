@@ -24,10 +24,16 @@
             {{$ing}}
         
             @component('components.botao')
+                @slot('cor')
+                    blue
+                @endslot
             Editar
             @endcomponent
 
             @component('components.botao')
+                @slot('cor')
+                    red
+                @endslot
             Deletar
             @endcomponent
 
