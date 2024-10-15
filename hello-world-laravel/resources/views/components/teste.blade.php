@@ -1,0 +1,1 @@
+<h1>Meu component</h1>

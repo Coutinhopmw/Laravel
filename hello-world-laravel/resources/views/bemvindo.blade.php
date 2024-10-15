@@ -10,19 +10,11 @@
 
 
     <div class="" style="display:flex; flex-direction: row; width:100%; height:100vh; background-color:rgb(247, 247, 247); margin:0;">
-        @foreach($pessoas as $ing)
-            <div class="" style="width: 25vh; height:40vh; background-color:rgb(235, 235, 235); border-radius:2%; margin:10vh;">
-                <div class="">
-                    <img style="width:90% !important; margin:5%;" src=" {{$ing['image']}}" alt="">
-                </div>
-                <div class="">
-                    <p style="text-align: center; font-size:x-large; font-weight:bold;">{{$ing['nome']}}</p>
-                    <p style="text-align: center; font-size:large;">Idade:{{$ing['idade']}} anos</p>
-                    <p style="text-align: center; font-size:large;"> Data nascimento:{{$ing['birth']}}</p>
-                </div>
-            </div>
-        @endforeach
+        @for($i = 0; $i < count($urls); $i++)
+            <img src="{{$urls[$i]}}" alt="" srcset="">
+        @endfor 
     </div>
+
 
 </body>
 
